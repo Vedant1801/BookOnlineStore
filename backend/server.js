@@ -76,13 +76,18 @@ app.use("/api/book", bookRouter);
 app.use("/api/orders", orderRouter);
 
 // AI assistant route
-app.use("/api/ai", chatRoutes);
+// app.use("/api/ai", chatRoutes);
 
 // Error handler (optional: helpful during development)
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({ message: "Internal Server Error", error: process.env.NODE_ENV === "development" ? err.message : undefined });
 });
+
+app.get("/", (req,res)=>{
+ res.send("Backend is live 🚀");
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
