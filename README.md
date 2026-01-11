@@ -27,8 +27,6 @@ with secure login and easy checkout.
 
 
 
----
-
 ## 🛠 Technologies Used
 
 Frontend:
@@ -60,8 +58,6 @@ Other Tools:
 
 ---
 
-
----
 
 ## ⚙ How to run this project
 
